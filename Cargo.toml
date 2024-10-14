@@ -1,0 +1,17 @@
+[package]
+name = "dioxus-template"
+version = "0.1.0"
+authors = ["Florian Zier <9168602+zierf@users.noreply.github.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { version = "^0.5.6", features = ["desktop", "web", "router"] }
+# pin to prevent error: "wasm file was linked against version of wasm-bindgen that uses a different bindgen format"
+# https://github.com/DioxusLabs/dioxus/issues/2083#issuecomment-1998825394
+# https://github.com/DioxusLabs/dioxus/issues/1601
+wasm-bindgen = "=0.2.93"
+
+# Debug
+dioxus-logger = "0.5.1"

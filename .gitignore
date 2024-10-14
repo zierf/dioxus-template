@@ -1,0 +1,17 @@
+# Dioxus
+/dist/
+/static/
+/.dioxus/
+
+# Tailwind
+/assets/tailwind.css
+
+# Rust
+/target/
+
+# rustfmt
+**/*.rs.bk
+
+# Nix
+/result
+.direnv
